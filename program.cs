@@ -23,6 +23,14 @@ namespace lab1
             this.square = square;
             this.length = length;
         }
+        
+        
+        public River(string Name, double Square, double Length)
+        {
+            name = Name;
+            square = Square;
+            length = Length;
+        }
         public River(){}
     }
 }
