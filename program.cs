@@ -1,9 +1,13 @@
+using System;
+
 namespace lab1
 {
     internal class Program
     {
         public static void Main(string[] args)
         {
+            River Berezina = new River();
+            River Sorjyanka = new River(sorjyanka, 23, 3457565);
         }
     }
 
@@ -11,6 +15,14 @@ namespace lab1
     {
         public string name;
         public double square;
-        public double lenght;
+        public double length;
+
+        public River(string name, double square, double length)
+        {
+            this.name = name;
+            this.square = square;
+            this.length = length;
+        }
+        public River(){}
     }
 }
